@@ -9,6 +9,19 @@ import UIKit
 
 class AuthorizationViewController: UIViewController {
     
+    @IBAction func createButton(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "CreateVC")
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        
+    }
+    @IBAction func buttonCome(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "InfoVC")
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
